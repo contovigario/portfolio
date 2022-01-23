@@ -17,11 +17,11 @@ function Tweet() {
     return(
         <section>
             {
-            items.map(item => (
-            <div>
-                <p>{item.name}</p>
-                <p>{item.msg}</p>
-                <p>{item.username}</p>
+            items.map((item, index) => (
+            <div key="thediv">
+                <p key="name">{item.name}</p>
+                <p key="msg">{item.msg}</p>
+                <p key="username">{item.username}</p>
             </div>
             ))
             }
