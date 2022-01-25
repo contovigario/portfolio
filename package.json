@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express":"*"
+  },
   "devDependencies": {
     "express":"*",
     "nodemon": "^2.0.15"
