@@ -4,7 +4,9 @@ const routesHandler = require('./routes/handler.js');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://svi-portfolio-f.herokuapp.com'
+}));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use('/', routesHandler);
