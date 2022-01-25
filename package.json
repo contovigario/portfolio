@@ -4,19 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server":"nodemon index.js",
-    "client":"npm run start --prefix ../frontend",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix ../frontend",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express":"*",
+    "cors": "^2.8.5",
+    "express": "*",
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "express":"*",
+    "express": "*",
     "nodemon": "^2.0.15"
   }
 }
